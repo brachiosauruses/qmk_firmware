@@ -19,5 +19,5 @@ build:
 	ln -sf $(MAKEFILE_DIR)$(KEEB) $(INSERT_DIR)
 	qmk compile --compiledb -j 4 $(CONTEXT)
 
-flash:
+f:
 	qmk flash $(CONTEXT)

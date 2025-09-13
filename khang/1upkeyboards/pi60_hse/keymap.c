@@ -76,8 +76,12 @@ void keyboard_pre_init_kb(void) {
 
 void keyboard_post_init_kb(void) {
     // Use a blank slate instead of the horrible bright red as default.
-    rgblight_sethsv_noeeprom(0, 0, 0);
+    rgblight_mode_noeeprom(RGBLIGHT_MODE_STATIC_GRADIENT);
+    // rgblight_mode_noeeprom(RGBLIGHT_MODE_STATIC_LIGHT);
+    rgblight_sethsv_noeeprom(0, 255, 100);
 }
+
+const uint8_t RGBLED_GRADIENT_RANGES[] PROGMEM = {190, 232, 6, 11, 23};
 
 // layer_state_t default_layer_state_set_kb(layer_state_t state) {
 // }
