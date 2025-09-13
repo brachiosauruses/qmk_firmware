@@ -1,0 +1,13 @@
+KEY_OVERRIDE_ENABLE = yes # needed for ctrl+bspc -> del
+LTO_ENABLE = yes          # optimization
+RGBLIGHT_ENABLE = yes
+
+MUSIC_ENABLE = no
+CONSOLE_ENABLE = no
+COMMAND_ENABLE = no
+MOUSEKEY_ENABLE = no
+SPACE_CADET_ENABLE = no
+GRAVE_ESC_ENABLE = no
+RGB_MATRIX_ENABLE = no
+EXTRAKEY_ENABLE = no
+MAGIC_ENABLE = no

@@ -1,0 +1,22 @@
+// Copyright 2022 ziptyze (@ziptyze)
+// SPDX-License-Identifier: GPL-2.0-or-later
+
+#pragma once
+
+#define RGBLIGHT_LED_COUNT 16
+#undef RGBLIGHT_LED_MAP
+#define RGBLIGHT_LED_MAP {4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 0, 1, 2, 3}
+
+#define RGBLIGHT_LAYERS
+#define RGBLIGHT_LAYERS_OVERRIDE_RGB_OFF
+
+// #define RGBLIGHT_DEFAULT_MODE RGBLIGHT_MODE_STATIC_LIGHT
+// #define RGBLIGHT_DEFAULT_HUE 180
+// #define RGBLIGHT_DEFAULT_SAT 70
+// #define RGBLIGHT_DEFAULT_VAL 100
+
+// #undef RGBLIGHT_ANIMATIONS
+
+#define NO_ACTION_ONESHOT
+#define NO_MUSIC_MODE
+#define LAYER_STATE_8BIT
