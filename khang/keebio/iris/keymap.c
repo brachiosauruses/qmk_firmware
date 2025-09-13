@@ -97,7 +97,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     //├────────┼────────┼────────┼────────┼────────┼────────┼────────╮  ╭────────┼────────┼────────┼────────┼────────┼────────┼────────┤
         XXXXXX , ______ , ______ , ______ , ______ , ______ , ______ ,    ______ , ______ , ______ , ______ , ______ , ______ , XXXXXX ,
     //╰────────┴────────┴────────┴───┬────┴───┬────┴───┬────┴───┬────╯  ╰───┬────┴───┬────┴───┬────┴───┬────┴────────┴────────┴────────╯
-                                       GUI_ON , ______ , ______ ,            QK_BOOT , ______ , ______
+                                       GU_ON  , ______ , ______ ,            QK_BOOT , ______ , ______
     //                               ╰────────┴────────┴────────╯           ╰────────┴────────┴────────╯
         // clang-format on
         ),
@@ -142,9 +142,8 @@ const key_override_t delete_key_override =
     ko_make_basic(MOD_MASK_CTRL, KC_BSPC, KC_DEL);
 
 // This globally defines all key overrides to be used
-const key_override_t **key_overrides = (const key_override_t *[]){
+const key_override_t *key_overrides[] = {
     &delete_key_override,
-    NULL,
 };
 
 // These overrides save memory space.
