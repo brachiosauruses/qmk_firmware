@@ -3,6 +3,7 @@ USER := khang
 KEEB := keebio/iris
 KEEB := dz60
 KEEB := 1upkeyboards/pi60_hse
+KEEB := qwertykeys/neo60
 
 KEEB_REV := keebio/iris/rev4
 KEEB_REV := $(KEEB)
